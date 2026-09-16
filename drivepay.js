@@ -164,18 +164,19 @@ function calc() {
         }
 
 
+        document.querySelector("#interestRate").value = (interest * 100) + "%";
+
+
         if (period != "" && downPayment != "") {
 
             loan = price - parseFloat(downPayment);
-
+        
             totalInterest = loan * interest * parseInt(period);
-
+        
             total = loan + totalInterest;
 
             monthly = total / (parseInt(period) * 12);
 
-
-            document.querySelector("#interestRate").value = (interest * 100) + "%";
 
             document.querySelector("#totalAmount").value = total.toFixed(2) + " EGP";
 
@@ -184,8 +185,6 @@ function calc() {
         }
 
         else {
-
-            document.querySelector("#interestRate").value = "0%";
 
             document.querySelector("#totalAmount").value = "0 EGP";
 
