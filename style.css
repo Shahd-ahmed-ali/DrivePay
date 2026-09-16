@@ -69,7 +69,6 @@ main {
 
     animation: heroAppear 1.5s ease-out;
     transition: color 0.4s ease, text-shadow 0.4s ease;
-
 }
 
 .calculator-intro h1:hover {
