@@ -23,85 +23,115 @@
 
     <main>
         
-        <!-- Calculator Title -->
-            <h1>Car Installments Calculator</h1>
-            <p>Calculate your monthly car installment easily.</p>
+                                 <!-- Calculator Title -->
+         <section class="calculator-intro">
+                 <h1>Car Installments <br> Calculator</h1>
+                 <p>Calculate your monthly car installment easily.</p>
+         </section>
 
-        <!-- Car Information -->
-
-            <label for="carType">Car Type</label>
-
-            <select id="carType">
-                 <option value="">Select Car Type</option>
-                 <option value="car1">Mercedes</option>
-                 <option value="car2">BMW</option>
-                 <option value="car3">Audi</option>
-                 <option value="car4">Porsche</option>
-            </select>
-
-
-
-
-            <label for="carModel">Model Year</label>
+                                 <!-- Car Information -->
+        <section class="calculator"> 
             
-            <select id="carModel">
-                 <option value="">Select Model Year</option>
-                 <option value="2023">2023</option>
-                 <option value="2024">2024</option>
-                 <option value="2025">2025</option>
-                 <option value="2026">2026</option>
-            </select>
+            <div class="form-group">
+             
+                 <label for="carType">Car Type</label>
+             
+                <select id="carType">
+                    <option value="">Select Car Type</option>
+                    <option value="car1">Mercedes</option>
+                    <option value="car2">BMW</option>
+                    <option value="car3">Audi</option>
+                    <option value="car4">Porsche</option>
+                </select>
+                
+            </div>
 
 
+            <div class="form-group"> 
 
-            <label for="carPrice">Car Price</label>
+                <label for="carModel">Model Year</label>
+                
+                <select id="carModel">
+                    <option value="">Select Model Year</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                </select>
+                
+            </div>
 
-            <input type="text" id="carPrice" value="0" readonly>
+            <div class="form-group">
+
+                <label for="carPrice">Car Price</label>
+                
+                <input type="text" id="carPrice" value="0" readonly>
+                
+            </div>
+
+            <div class="form-group">
+
+                <label for="downPayment">Down Payment</label>
+                
+                <input type="number" id="downPayment" placeholder="Enter down payment">
+                
+            </div>
 
 
+            <div class="form-group">
 
-            <label for="downPayment">Down Payment</label>
+                <label for="installmentPeriod">Installment Period</label>
+                
+                <select id="installmentPeriod">
+                    <option value="">Select Period</option>
+                    <option value="1">12 Months</option>
+                    <option value="2">24 Months</option>
+                    <option value="3">36 Months</option>
+                    <option value="4">48 Months</option>
+                    <option value="5">60 Months</option>
+                </select>
+                
+            </div>
 
-            <input type="number" id="downPayment" placeholder="Enter down payment">
+            <div class="form-group">
 
-
-
-
-            <label for="installmentPeriod">Installment Period</label>
-
-            <select id="installmentPeriod">
-                <option value="">Select Period</option>
-                <option value="1">12 Months</option>
-                <option value="2">24 Months</option>
-                <option value="3">36 Months</option>
-                <option value="4">48 Months</option>
-                <option value="5">60 Months</option>
-            </select>
-
-
-
-            <label for="interestRate">Interest Rate</label>
-
-            <input type="text" id="interestRate" value="0%" readonly>  
-            
+                <label for="interestRate">Interest Rate</label>
+                
+                <input type="text" id="interestRate" value="0%" readonly>  
+                
+            </div>
             
 
         <!-- Results -->
+            <div class="results">
 
-            <label for="monthlyInstallment">Monthly Installment</label>
-
-            <input type="text" id="monthlyInstallment" value="0 EGP" readonly>
-
-
-
-
-            <label for="totalAmount">Total Amount</label>
-
-            <input type="text" id="totalAmount" value="0 EGP" readonly>
-    </main>
-
-
+                <div class="result-group">
     
+                    <label for="monthlyInstallment">Monthly Installment</label>
+                    
+                    <input type="text" id="monthlyInstallment" value="0 EGP" readonly>
+                    
+                </div>   
+            
+
+                <div class="result-group">
+    
+                    <label for="totalAmount">Total Amount</label>
+                    
+                    <input type="text" id="totalAmount" value="0 EGP" readonly>
+                
+                </div> 
+
+
+                
+            </div>
+
+        </section> 
+
+    </main>
+    
+    
+
     <footer>
             <p>© 2026 DrivePay. All Rights Reserved.</p>
     </footer>
